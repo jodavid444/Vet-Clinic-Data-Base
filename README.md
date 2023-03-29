@@ -141,6 +141,6 @@ If you like this project kindly leave a star.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/jodavid444/VET-CLINIC-DATA-BASE/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/jodavid444/Vet-Clinic-Data-Base/blob/main/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
