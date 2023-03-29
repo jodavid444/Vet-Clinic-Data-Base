@@ -7,6 +7,6 @@ CREATE TABLE animals (
     escape_attempts INT,
     neutered        BOOLEAN, 
     weight_kg       DECIMAL,
-    PRIMARY KEY(id) ;
+    PRIMARY KEY(id) 
 );
 
