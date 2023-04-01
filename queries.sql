@@ -116,4 +116,13 @@ SELECT full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME",species.name A
     JOIN animals
     on owners.id = animals.owner_id 
     GROUP By full_name
-    ORDER BY COUNT(animals.name) DESC LIMIT 1;       
+    ORDER BY COUNT(animals.name) DESC LIMIT 1;
+
+ --  querys for many-to-many
+
+   SELECT animals.id, animals.name AS Last_Seen, visit_date
+   FROM animals JOIN visits 
+   ON animals.id = visits.animal_id
+   WHERE vets_id = (SELECT id from vets WHERE name = 'William Tatcher')
+   ORDER BY visit_date DESC LIMIT 1;
+       
