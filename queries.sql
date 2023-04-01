@@ -29,3 +29,9 @@ WHERE species IS NULL OR species = '';
 
 SELECT * from animals;
 COMMIT;
+
+
+/*3rd transaction */
+
+BEGIN;
+DELETE FROM animals;
