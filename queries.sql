@@ -30,10 +30,15 @@ WHERE species IS NULL OR species = '';
 SELECT * from animals;
 COMMIT;
 
-
 /*3rd transaction */
 
 BEGIN;
 DELETE FROM animals;
 ROLLBACK;
 SELECT * from animals;
+
+
+/*4th transaction */
+
+DELETE FROM animals
+WHERE date_of_birth > '2022-01-01';
