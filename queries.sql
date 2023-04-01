@@ -109,4 +109,11 @@ SELECT full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME",species.name A
    FROM animals
    INNER JOIN owners ON  animals.owner_id = owners.id
    INNER JOIN species ON  animals.species_id = species.id
-   WHERE owners.id = 5 and animals.escape_attempts = 0;        
+   WHERE owners.id = 5 and animals.escape_attempts = 0; 
+
+   SELECT full_name AS "OWNER NAME",  COUNT(animals.name) AS "ANIMAL COUNT" 
+    FROM owners
+    JOIN animals
+    on owners.id = animals.owner_id 
+    GROUP By full_name
+    ORDER BY COUNT(animals.name) DESC LIMIT 1;       
