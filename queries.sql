@@ -165,11 +165,10 @@ SELECT animals.name AS "RECENT ANIMAL SEEN", vets.name AS "VET NAME", visit_date
     JOIN vets ON visits.vets_id = vets.id
     ORDER BY visit_date DESC LIMIT 1;
 
-SELECT COUNT(*) AS "number of visits" FROM vets
-    INNER JOIN visits ON vets.id = visits.vets_id
-    LEFT JOIN specializations ON vets.id = specializations.vets_id
-    LEFT JOIN species ON specializations.species_id = species.id
-    WHERE species IS NULL; 
+SELECT COUNT(*) AS "number of visits" 
+  FROM vets INNER JOIN visits ON vets.id = visits.vets_id 
+  LEFT JOIN specializations ON vets.id = specializations.vet_id 
+  LEFT JOIN species ON specializations.species_id = species.id WHERE species IS NULL;
 
     SELECT species.name AS "Species Name" 
     FROM visits
