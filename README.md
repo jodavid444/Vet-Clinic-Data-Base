@@ -33,9 +33,8 @@ Vet Clinic database is a relational database type by Structured Query Language '
 
 - Database
 
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
+- <a href="https://www.postgresql.org/">PostgreSQL</a></li>
+
 
 
 ### Key Features <a name="key-features"></a>
