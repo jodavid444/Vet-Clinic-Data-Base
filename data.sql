@@ -42,7 +42,10 @@ VALUES ('Sam Smith',34 ),
        ('Dean Winchester', 14),
        ('Jodie Whittaker', 38);
 
-
 INSERT INTO species (name) 
 VALUES ('Pokemon'),
-       ('Digimon');       
+       ('Digimon'); 
+
+UPDATE animals
+    SET species_id = (SELECT id from species WHERE name = 'Digimon')
+    WHERE name like '%mon'; 
