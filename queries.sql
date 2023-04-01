@@ -81,3 +81,9 @@ SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
    INNER JOIN owners
    ON  animals.owner_id = owners.id
    WHERE owners.full_name = 'Melody Pond';
+
+    SELECT species.name AS "Animal Species", animals.name AS "ANIMALS NAME"
+    FROM animals
+    JOIN species
+    ON animals.species_id = species.id
+    WHERE species.id = 1;
