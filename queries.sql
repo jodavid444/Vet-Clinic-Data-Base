@@ -138,3 +138,9 @@ SELECT vets.id, vets.name AS "Vet name", species.name AS "SpecializATION"
    LEFT JOIN specializations ON specializations.vets_id = vets.id
    LEFT JOIN species on specializations.species_id = species.id;    
        
+
+   SELECT vets.name AS "VET NAME" , animals.name AS "Animal Seen", visit_date
+    from animals
+    JOIN visits ON animals.id = visits.animal_id
+    JOIN vets ON visits.vets_id = vets.id
+    WHERE vets_id = (SELECT id from vets WHERE name = 'Stephanie Mendez') AND visit_date BETWEEN '2020-04-01' and '2020-08-30';       
