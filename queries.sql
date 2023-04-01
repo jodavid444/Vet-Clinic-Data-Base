@@ -73,3 +73,11 @@ FROM animals
 WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31'
 GROUP BY species;
 
+
+-- Multiple tables querys
+
+SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
+   FROM animals
+   INNER JOIN owners
+   ON  animals.owner_id = owners.id
+   WHERE owners.full_name = 'Melody Pond';
