@@ -143,4 +143,11 @@ SELECT vets.id, vets.name AS "Vet name", species.name AS "SpecializATION"
     from animals
     JOIN visits ON animals.id = visits.animal_id
     JOIN vets ON visits.vets_id = vets.id
-    WHERE vets_id = (SELECT id from vets WHERE name = 'Stephanie Mendez') AND visit_date BETWEEN '2020-04-01' and '2020-08-30';       
+    WHERE vets_id = (SELECT id from vets WHERE name = 'Stephanie Mendez') AND visit_date BETWEEN '2020-04-01' and '2020-08-30';
+
+ 
+  SELECT animals.name , COUNT (*) as "Visit count"
+   from animals
+   JOIN visits ON animals.id = visits.animal_id
+   GROUP BY  animals.name
+   ORDER BY COUNT (*) DESC LIMIT 1;   
