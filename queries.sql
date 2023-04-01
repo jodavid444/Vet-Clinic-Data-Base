@@ -35,3 +35,5 @@ COMMIT;
 
 BEGIN;
 DELETE FROM animals;
+ROLLBACK;
+SELECT * from animals;
