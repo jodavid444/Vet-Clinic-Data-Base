@@ -87,3 +87,8 @@ SELECT owner_id, full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
     JOIN species
     ON animals.species_id = species.id
     WHERE species.id = 1;
+
+SELECT  full_name AS "OWNER NAME" , animals.name AS "ANIMALS NAME"
+   FROM owners
+   LEFT JOIN  animals
+   ON  owners.id =  animals.owner_id ;
