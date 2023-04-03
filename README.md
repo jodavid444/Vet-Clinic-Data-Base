@@ -91,6 +91,14 @@ Install this project with:
 
 - LinkedIn: [Joseph David](https://linkedin.com/in/joseph-david-01a8a5243)
 
+
+👤 **Juhar Yimer**
+
+- GitHub: [Juhar Yimer](https://github.com/juaryimami) 
+
+- LinkedIn: [Juhar Yimer](https://www.linkedin.com/in/juhar-yimer/) 
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
