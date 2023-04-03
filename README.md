@@ -39,8 +39,6 @@ Vet Clinic database is a relational database type by Structured Query Language '
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - **[create animals table]**
 - **[query and update animals table]**
 - **[query multiple tables]**
@@ -85,8 +83,6 @@ Install this project with:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Joseph David**
 
 - GitHub: [Joseph David](https://github.com/jodavid444)
@@ -95,12 +91,18 @@ Install this project with:
 
 - LinkedIn: [Joseph David](https://linkedin.com/in/joseph-david-01a8a5243)
 
+
+👤 **Juhar Yimer**
+
+- GitHub: [Juhar Yimer](https://github.com/juaryimami) 
+
+- LinkedIn: [Juhar Yimer](https://www.linkedin.com/in/juhar-yimer/) 
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - [ ] **[join table for visists]**
 - [ ] **[database performance audit]**

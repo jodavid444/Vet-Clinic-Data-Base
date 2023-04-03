@@ -84,3 +84,11 @@ DROP CONSTRAINT PK_visits;
 ALTER TABLE visits 
 ADD CONSTRAINT PK_visits 
 PRIMARY KEY (animal_id, vets_id, visit_date);
+
+-- performance audit
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX owners_email_idx ON owners(email);
+CREATE INDEX visits_animal_id_idx ON visits(animal_id);
+CREATE INDEX visits_vets_id_idx ON visits(vets_id);
