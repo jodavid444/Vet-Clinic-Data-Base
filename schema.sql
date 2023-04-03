@@ -22,6 +22,9 @@ CREATE TABLE owners (
   PRIMARY KEY (id)
 );
 
+-- updating the schema of owner table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
 CREATE TABLE species (
   id INT GENERATED ALWAYS AS IDENTITY,
   name VARCHAR(255),
