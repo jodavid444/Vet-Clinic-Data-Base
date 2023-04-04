@@ -51,3 +51,6 @@ CREATE TABLE medical_treatment (
 ALTER TABLE medical_treatment ADD CONSTRAINT fk_med_treatment_id FOREIGN KEY (treatments_id) REFERENCES treatments(id);
 
 ALTER TABLE medical_treatment ADD CONSTRAINT fk_med_medical_id FOREIGN KEY (medical_histories_id) REFERENCES medical_histories(id);
+
+CREATE INDEX ON invoice_items (invoice_id);
+CREATE INDEX ON invoice_items (treatment_id);
